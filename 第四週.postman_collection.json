@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "01f3fd62-b7a3-409e-a83a-0825038abf1e",
-		"name": "第四週",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"name": "第四週1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "4865412"
 	},
 	"item": [
@@ -14,15 +14,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/users",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"users"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/users"
 					},
 					"response": []
 				},
@@ -40,15 +32,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/users",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"users"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/users"
 					},
 					"response": []
 				},
@@ -61,15 +45,7 @@
 							"mode": "raw",
 							"raw": ""
 						},
-						"url": {
-							"raw": "{{url}}/users",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"users"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/users"
 					},
 					"response": []
 				}
@@ -83,15 +59,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/posts",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"posts"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/posts"
 					},
 					"response": []
 				},
@@ -109,16 +77,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/posts/create",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"posts",
-								"create"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/posts/create"
 					},
 					"response": []
 				},
@@ -127,15 +86,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/posts",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"posts"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/posts"
 					},
 					"response": []
 				},
@@ -144,16 +95,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/posts/62923a4c04440ba101602978",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"posts",
-								"62923a4c04440ba101602978"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/posts/62923a4c04440ba101602978"
 					},
 					"response": []
 				},
@@ -171,16 +113,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{url}}/posts/62923a8e04440ba10160297c",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"posts",
-								"62923a8e04440ba10160297c"
-							]
-						}
+						"url": "https://mysterious-ravine-08103.herokuapp.com/posts/62923a8e04440ba10160297c"
 					},
 					"response": []
 				}
