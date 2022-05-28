@@ -31,8 +31,7 @@ const postsController = {
         }
         res.status(200).json({
             "status": "success",
-            "data": data,
-            "message": "撈取成功",
+            "data": data,           
           });
         
     },

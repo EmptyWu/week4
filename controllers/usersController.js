@@ -8,8 +8,7 @@ const users = {
         const data = await User.find();
         res.status(200).json({
           "status": "success",
-          "data": data,
-          "message": "撈取成功",
+          "data": data         
         });
         
     },
@@ -22,8 +21,7 @@ const users = {
         if(user.length != 0 ){
           res.status(200).json({
             "status": "success",
-            "data": user,
-            "message": "撈取成功",
+            "data": user           
           });
         }
         return  next(appError(400, `無此id`, next));
