@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "01f3fd62-b7a3-409e-a83a-0825038abf1e",
+		"name": "第四週",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4865412"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "取得所有使用者",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "新增使用者",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"test1\",\r\n            \"email\": \"test2@teat.com\",\r\n            \"password\": \"456789123\",\r\n            \"image\": \"\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "刪除所有使用者",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "取得所有貼文",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "新增貼文",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"629238a1b4d57a8c92ccd513\",\r\n            \"tags\": \"111\",\r\n            \"type\": \"group\",\r\n            \"image\": \"\",            \r\n            \"content\": \"12312\",\r\n            \"likes\": 0,\r\n            \"comments\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "刪除所有貼文",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "刪除單筆資料",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/posts/62923a4c04440ba101602978",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"62923a4c04440ba101602978"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改單筆資料",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"txxx\",    \r\n            \"tags\": \"222\",\r\n            \"content\": \"12312\",    \r\n            \"type\":\"group\"        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/posts/62923a8e04440ba10160297c",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"posts",
+								"62923a8e04440ba10160297c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
